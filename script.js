@@ -142,8 +142,10 @@ input.addEventListener("keydown", (e) => {
   }
 });
 
-// Wait for the page to load completely
+// When the page is fully loaded, hide the hacker animation
 window.onload = () => {
-    const loader = document.getElementById('loader');
-    loader.style.display = 'none'; // Hide the loader after the page loads
+    setTimeout(() => {
+        const hackerAnimation = document.getElementById('hacker-animation');
+        hackerAnimation.style.display = 'none'; // Hide the animation after 5 seconds
+    }, 5000); // Wait for 5 seconds
 };
