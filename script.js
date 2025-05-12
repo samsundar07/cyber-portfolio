@@ -141,3 +141,9 @@ input.addEventListener("keydown", (e) => {
     }
   }
 });
+
+// Wait for the page to load completely
+window.onload = () => {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'none'; // Hide the loader after the page loads
+};
